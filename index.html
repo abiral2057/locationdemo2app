@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restricted Access</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #access-denied {
+            display: none;
+            
+        }
+        #access-granted{
+            display: none;
+        
+        }
+        #access-text{
+            color: green;
+        }
+        #denied-text{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our <span style="background: purple; color: white;">Store </span></h1>
+    <p>Checking your location...</p>
+    <div id="access-granted">
+    <p id="access-text">Access granted. You are at the store.</p>
+
+    <input type="text" placeholder="Hey,. Welcome to my Store">
+
+    <img src="gif/meme.gif" alt="loading.." style="margin: 2rem;">
+</div>
+<div id="access-denied" alt="loading.." >
+    <p id="denied-text">Access denied. You are not at the store.</p>
+    <img src="gif/giphy.gif" style="margin: 2rem;">
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
